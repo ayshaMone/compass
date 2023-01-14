@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 50px 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.space-bettwen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange {
+    background-color: #c85400;
+    color: #fff
+}
+
+.white {
+    background-color: #fff;
+    color: #080808
+}
+
+.black {
+    background-color: #080808;
+    color: #fff;
+}
+
+.h-400 {
+    height: 400px;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*===========Header Start===========*/
+.header {
+    padding: 5px 0;
+}
+
+.header-item span {
+    font-size: 15px;
+}
+
+.social-icon ul {
+    list-style: none;
+}
+
+.social-icon ul li {
+    float: left;
+    margin: 5px
+}
+
+.social-icon ul li a {
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 10px;
+    color: #fff;
+}
+
+.social-icon ul a i {
+    font-size: 14px;
+}
+
+/*===========Header End===========*/
+/*===========Navigation Start===========*/
+.navigation {
+    padding: 20px 0;
+}
+
+.logo h2 {
+    font-family: fantasy;
+    text-transform: uppercase;
+    color: purple;
+    text-shadow: 3px 2px #56f10c;
+}
+
+nav.menu ul {
+    list-style: none;
+}
+
+nav.menu ul li {
+    float: left;
+    margin: 5px;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #080808;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s all ease;
+}
+
+nav.menu ul li a:hover {
+    background: #d75408;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*===========Navigation End===========*/
+/*===========Banner Start===========*/
+.banner-area {
+    background: url(../image/bannder-bg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+
+.banner-area::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: -5;
+}
+
+.banner {
+    text-align: center;
+    color: #ffffff;
+    width: 70%;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-family: Bodoni MT Black;
+    font-size: 40px;
+    text-shadow: 5px 2px #c30087;
+}
+
+/*===========Banner End===========*/
+/*===========Service Start===========*/
+.section-heading h2 {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-heading h2::before {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 5px;
+    background: #b33c04;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.section-heading h2::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    border: 2px solid red;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    bottom: -14px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.section-content {
+    padding: 20px 0;
+}
+
+.card-header {
+    margin: 10px 0;
+}
+
+.card-header i {
+    color: #df580a;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.card-header h3 {
+    text-transform: uppercase;
+    font-family: math;
+    color: #3e3939;
+    font-size: 20px;
+}
+
+.service-item {
+    width: 23%;
+    margin: 10px 0
+}
+
+/*===========Service End===========*/
+/*===========Portfolio start===========*/
+.portfolios {
+    flex-flow: wrap;
+
+}
+
+.portfolio-item {
+    width: 23%;
+    margin: 1%;
+}
+
+/*===========Portfolio End===========*/
+/*===========About Start===========*/
+.info-item:first-child {
+    width: 60%;
+    margin-right: 10%;
+}
+
+.info-item:last-child {
+    width: 30%;
+}
+
+.chart ul {
+    list-style: none;
+}
+
+.chart ul li {
+    border: 1px solid gray;
+    margin: 15px 0px;
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.chart ul li:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(149, 55, 10, 0.5);
+    z-index: -5;
+}
+
+.chart ul li::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 100%;
+    background: red;
+    left: 0;
+    z-index: -3;
+}
+
+.team-member {
+    width: 32%;
+    box-shadow: 1px 1px 6px #000;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.team-member .card-media {
+    height: 300px;
+}
+
+.team-member .card-header,
+.team-member .card-body {
+    padding: 5px;
+}
+
+/*===========About End===========*/
+/*===========Contact Start===========*/
+
+.contact-form {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.contact-address {
+    width: 35%;
+}
+
+.contact-heading h3 {
+    color: #3a3a3a;
+    margin: 20px 0;
+}
+
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+}
+
+.contact-form-group label {
+    color: #df580a;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    border: 1px solid #df580a;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #df580a;
+    transition: .5s all ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #df580a
+}
+
+/*address*/
+.contact-map {
+    padding: 5px;
+    border: 1px solid #df580a;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.contact-info p {
+    margin: 20px 0
+}
+
+/*===========Contact End===========*/
+/*===========footer Start===========*/
+.footer a {
+    text-decoration: none;
+    color: #ffd921;
+    font-size: 14px;
+    transition: 0.5s all ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*===========footer End===========*/
